@@ -1,0 +1,46 @@
+
+*{padding: 0;
+    margin: 0;}
+.portrait-img{
+    animation: from_left_side 1s;
+}
+
+.about .right-side{
+    animation: from_right_side 1s;
+}
+
+@keyframes from_left_side{
+    from{
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes from_right_side{
+    from{
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes from_top_side{
+    from{
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.show ul{
+    animation: from_top_side .8s ease-out;
+}
